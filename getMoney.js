@@ -1,17 +1,16 @@
-/** @param {NS} ns */
+/** @param {NS} ns **/
 export async function main(ns) {
-    var localhost = ns.args[0];
-    var minSecurity = ns.getServerMinSecurityLevel(localhost) + 5
-    var maxMoney = ns.getServerMaxMoney(localhost) * 0.75;
-  
-    while(true) {
-      if (ns.getServerSecurityLevel(localhost) > minSecurity) {
-        await ns.weaken(localhost);
-      } else if ( ns.getServerMoneyAvailable(localhost) < maxMoney){
-        await ns.grow(localhost);
+  const target = ns.args[0];
+  const minSecurity = ns.getServerMinSecurityLevel(target) + 5;
+  const maxMoney = ns.getServerMaxMoney(target) * 0.75;
+
+  while (true) {
+      if (ns.getServerSecurityLevel(target) > minSecurity) {
+          await ns.weaken(target);
+      } else if (ns.getServerMoneyAvailable(target) < maxMoney) {
+          await ns.grow(target);
       } else {
-        await ns.hack(localhost);
+          await ns.hack(target);
       }
-    }
   }
-  
+}
