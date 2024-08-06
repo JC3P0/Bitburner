@@ -40,7 +40,7 @@ The `sellHash.js` script monitors the player's hash capacity and sells hashes fo
 
 ### endNode.js
 
-The `endNode.js` script is designed to locate and backdoor the World Daemon server (`w0r1d_d43m0n`) to complete a BitNode. It checks if the player's hacking level is sufficient before attempting to backdoor the server.
+The endNode.js script is designed to locate and prepare the World Daemon server (w0r1d_d43m0n) for backdoor installation to complete a BitNode. It runs the necessary cracking programs to gain root access and then connects you directly to the server, allowing you to manually install the backdoor. This script requires access to the Singularity API functions, which are unlocked by completing BitNode 4: The Singularity. These functions enable the script to connect to servers and perform the necessary actions programmatically.
 
 ### autoHacknet.js
 
@@ -56,7 +56,7 @@ The `setHackSleeves.js` script specifically configures sleeves to train hacking 
 
 ### milestones.js
 
-The `milestones.js` script scans the network to find specific servers and installs backdoors on them if the required hacking level is met.
+The milestones.js script scans the network to find specific servers and installs backdoors on them if the required hacking level is met. This script requires access to the Singularity API functions, which are unlocked by completing BitNode 4: The Singularity. These functions enable the script to connect to servers and install backdoors programmatically. The script requires 67.90 GB of RAM to run, so upgrading your 'home' server's RAM before executing this script is necessary.
 
 ### getMoney.js
 
