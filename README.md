@@ -28,7 +28,7 @@ Bitburner is a programming-based incremental game that involves hacking servers,
 
 ### infiltrate.js
 
-The `infiltrate.js` script scans the network, gains root access on hackable servers, and deploys a specified hacking script (`getMoney.js`) on them.
+The `infiltrate.js` script scans the network, gains root access on hackable servers, and deploys a specified hacking script (`getMoney.js`) on them. Targets "foodnstuff" by default unless an arg is given, for example - run infiltrate.js "iron-gym"
 
 ### purchaseServer.js
 
