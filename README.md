@@ -17,7 +17,6 @@ Welcome to the Bitburner scripts repository! This collection of scripts is desig
   - [getMoney.js](#getmoneyjs)
   - [buyPrograms.js](#buyprogramsjs)
   - [buyGangEquipment.js](#buygangequipmentjs)
-- [Installation](#installation)
 - [License](#license)
 
 ## Overview
@@ -69,12 +68,6 @@ The `buyPrograms.js` script automates the purchase of hacking programs when they
 ### buyGangEquipment.js
 
 The `buyGangEquipment.js` script automates the purchase of equipment for gang members.
-
-## Installation
-
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/JC3P0/Bitburner.git
 
 ## License
 
