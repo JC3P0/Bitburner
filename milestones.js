@@ -22,9 +22,22 @@ export async function main(ns) {
             if (!visited.has(neighbor)) {
                 visited.add(neighbor); // Ensure we mark this neighbor as visited
                 const newPath = path.concat(neighbor);
-                if (targetServers.has(neighbor) && ns.hasRootAccess(neighbor) && !ns.getServer(neighbor).backdoorInstalled) {
-                    await backdoorServer(newPath);
+                
+                // Check if the neighbor is a target server
+                if (targetServers.has(neighbor)) {
+                    const serverInfo = ns.getServer(neighbor);
+                    
+                    // Check if we have root access and if the server is already backdoored
+                    if (ns.hasRootAccess(neighbor) && !serverInfo.backdoorInstalled) {
+                        // Check if our hacking level is sufficient
+                        if (ns.getHackingLevel() >= serverInfo.requiredHackingSkill) {
+                            await backdoorServer(newPath);
+                        } else {
+                            ns.tprint(`Cannot backdoor ${neighbor}. Required hacking level: ${serverInfo.requiredHackingSkill}`);
+                        }
+                    }
                 }
+                
                 await scanAndBackdoor(neighbor, newPath);
             }
         }

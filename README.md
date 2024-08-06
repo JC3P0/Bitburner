@@ -61,7 +61,7 @@ The `setCrimeSleeves.js` script sets all sleeves to commit crimes, specifically 
 
 ### milestones.js
 
-The `milestones.js` script scans the network to find specific servers and installs backdoors on them if the required hacking level is met. This script requires access to the Singularity API functions, which are unlocked by completing BitNode 4: The Singularity. These functions enable the script to connect to servers and install backdoors programmatically. The script requires 67.90 GB of RAM to run, so upgrading your 'home' server's RAM before executing this script is necessary.
+The `milestones.js` script scans the network to find specific servers and installs backdoors on them if the required hacking level is met. This script requires access to the Singularity API functions, which are unlocked by completing BitNode 4: The Singularity. These functions enable the script to connect to servers and install backdoors programmatically. The script requires 67.95 GB of RAM to run, so upgrading your 'home' server's RAM before executing this script is necessary.
 
 ### getMoney.js
 
