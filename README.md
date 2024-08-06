@@ -29,7 +29,7 @@ Bitburner is a programming-based incremental game that involves hacking servers,
 
 ### infiltrate.js
 
-The `infiltrate.js` script scans the network, gains root access on hackable servers, and deploys a specified hacking script (`getMoney.js`) on them. Targets "foodnstuff" by default unless an arg is given, for example: run infiltrate.js "iron-gym"
+The `infiltrate.js` script scans the network, gains root access on hackable servers, and deploys a specified hacking script (`getMoney.js`) on them. Targets "foodnstuff" by default unless an arg is given, for example - run infiltrate.js "iron-gym"
 
 ### purchaseServer.js
 
@@ -45,7 +45,7 @@ The `endNode.js` script is designed to locate and prepare the World Daemon serve
 
 ### autoHacknet.js
 
-The `autoHacknet.js` script automates the management of Hacknet Nodes. It purchases new nodes, upgrades existing ones, and ensures the most efficient use of available funds.
+The `autoHacknet.js` script automates the management of Hacknet Servers. It purchases new servers, upgrades existing ones, and ensures the most efficient use of available funds. This script requires completion of BitNode 9: Hacktocracy to unlock Hacknet Servers.
 
 ### setSleeves.js
 
@@ -57,7 +57,7 @@ The `setHackSleeves.js` script specifically configures sleeves to train hacking 
 
 ### setCrimeSleeves.js
 
-The `setCrimeSleeves.js` script sets all sleeves to commit crimes.
+The `setCrimeSleeves.js` script sets all sleeves to commit crimes, specifically homicide.
 
 ### milestones.js
 
@@ -84,6 +84,10 @@ To use scripts involving sleeves, such as `setSleeves.js`, `setHackSleeves.js`, 
 ### Gangs
 
 To use scripts involving gangs, such as `buyGangEquipment.js`, you must have completed BitNode 2: Rise of the Underworld, which unlocks the gang mechanic.
+
+### Hacknet Servers
+
+To use scripts involving Hacknet Servers, such as `autoHacknet.js` and `sellHash.js`, you must have completed BitNode 9: Hacktocracy, which unlocks Hacknet Servers.
 
 ### Singularity API
 
